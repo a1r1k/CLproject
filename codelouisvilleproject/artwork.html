@@ -1,32 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Autumn Keller</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Autumn Keller</h1>
-       
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="kramer.html" >Kramer</a></li>
-          <li><a href="artwork.html" class="selected">Artwork</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <section>
-      </section>
-      <footer>
-        
-      </footer>
+<html lang="en">
+<head>
+  <title>AutumnKeller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="www.autumnkeller.com">AutumnKeller</a>
     </div>
-  </body>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="artwork.html">Artwork</a></li>        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--carousel-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+	<li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="center-block" src="trail 1.jpg" alt="trail1" style="width:300px;height:490px">
+      <div class="carousel-caption">
+        <h3>trail1</h3>
+        <p>step one: paint steps and trees.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="center-block" src="trail 2.jpg" alt="trail2" style="width:300px;height:490px">
+      <div class="carousel-caption">
+        <h3>trail2</h3>
+        <p>step 2: fill in with green.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="center-block" src="trail 3.jpg" alt="trail3" style="width:300px;height:490px">
+      <div class="carousel-caption">
+        <h3>trail3</h3>
+        <p>step 3: add light and dark areas.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="center-block" src="trail 4.jpg" alt="trail4" style="width:300px;height:490px">
+      <div class="carousel-caption">
+        <h3>trail4</h3>
+        <p>step 4: add detail to stairs.</p>
+      </div>
+    </div>
+	<div class="item">
+      <img class="center-block" src="trail 5.jpg" alt="trail5" style="width:300px;height:490px" >
+      <div class="carousel-caption">
+        <h3>trail5</h3>
+        <p>step 5: add detailed leaves.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="well well-lg">Image Gallery</div>
+
+<!--image gallery-->
+<div class="row">
+  <div class="col-md-4">
+    <a href="woman in forest.jpg" class="thumbnail">
+      <p>woman in forest</p> 
+      <img src="woman in forest.jpg" alt="woman in forest" style="width:300px;height:200px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="acrylic landscape.jpg" class="thumbnail">
+      <p>acrylic landscape</p>
+      <img src="acrylic landscape.jpg" alt="acrylic landscape" style="width:300px;height:200px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="pastel landscape.jpg" class="thumbnail">
+      <p>pastel landscape</p> 
+      <img src="pastel landscape.jpg" alt="pastel landscape" style="width:300px;height:200px">
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="still life.jpg" class="thumbnail">
+      <p>still life</p> 
+      <img src="still life.jpg" alt="still life" style="width:300px;height:200px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="woman in water.jpg" class="thumbnail">
+      <p>woman in water</p>
+      <img src="woman in water.jpg" alt="woman in water" style="width:200px;height:300px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="trail 5.jpg" class="thumbnail">
+      <p>trail 5</p> 
+      <img src="trail 5.jpg" alt="trail 5" style="width:200px;height:300px">
+    </a>
+  </div>
+</div>
+
+</body>
 </html>

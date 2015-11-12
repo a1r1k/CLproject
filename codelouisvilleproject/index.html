@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Autumn Keller</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-	<style> background-color:purple</style>
-	<script>alert("hello")</script>
-  </head>
-  <body>
-    <header>
-      <a href="home.html" id="logo">
-        <h1>Autumn Keller</h1>
-       
-      </a>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="kramer.html" class="selected">Kramer</a></li>
-          <li><a href="artwork.html">Artwork</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <section>
-      </section>
-      <footer>
-        
-      </footer>
+<html lang="en">
+<head>
+  <title>AutumnKeller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="www.autumnkeller.com">AutumnKeller</a>
     </div>
-  </body>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="well well-sm">About Me</div>
+	<div class="row"> 
+		<div class="col-sm-6">
+			<p>My name is Autumn Keller, and I am creating this web page for a my Code Louisville project.
+			I am 32 years old and have a wonderful cat named Kramer. I also like to paint every now and then.</p>
+		</div>
+		<div class="col-sm-6">
+			<img class="img-circle center-block"src="kramer.jpg" style="width:300px;height:200px">
+		</div>
+	</div>
+	<div class="well well-sm">Contact Info</div>
+	<div class="row">
+		<div class="col-sm-6"> 
+			<p>Reach me by e-mail:<a href="#"><span class="glyphicon glyphicon-envelope"></span></a></p>
+		</div>
+		<div class="col-sm-6"> 
+			<p>Or call:<span class="glyphicon glyphicon-phone-alt"></span>270-926-1065</p>
+		</div>
+	</div>
+</body>
 </html>
