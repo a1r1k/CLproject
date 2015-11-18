@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="www.autumnkeller.com">AutumnKeller</a>
@@ -20,9 +20,13 @@
         <li><a href="index.html">Home</a></li>
         <li class="active"><a href="artwork.html">Artwork</a></li>        
       </ul>
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="mailto: arkell1183@gmail"><span class="glyphicon glyphicon-envelope"></span></a></li>
+	  </ul>
     </div>
   </div>
 </nav>
+<div class="well well-lg"><h1>Check out my artwork!</h1></div>
 <!--carousel-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -87,23 +91,25 @@
   </a>
 </div>
 
-<div class="well well-lg">Image Gallery</div>
+<div class="well well-lg"><h3>Image Gallery</h3></div>
+<div id="overlay"></div>
 
 <!--image gallery-->
+<div id="imageGallery">
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="woman in forest.jpg" class="thumbnail">
       <p>woman in forest</p> 
       <img src="woman in forest.jpg" alt="woman in forest" style="width:300px;height:200px">
     </a>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="acrylic landscape.jpg" class="thumbnail">
       <p>acrylic landscape</p>
       <img src="acrylic landscape.jpg" alt="acrylic landscape" style="width:300px;height:200px">
     </a>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="pastel landscape.jpg" class="thumbnail">
       <p>pastel landscape</p> 
       <img src="pastel landscape.jpg" alt="pastel landscape" style="width:300px;height:200px">
@@ -111,25 +117,26 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="still life.jpg" class="thumbnail">
       <p>still life</p> 
       <img src="still life.jpg" alt="still life" style="width:300px;height:200px">
     </a>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="woman in water.jpg" class="thumbnail">
       <p>woman in water</p>
-      <img src="woman in water.jpg" alt="woman in water" style="width:200px;height:300px">
+      <img id="tall1" src="woman in water.jpg" alt="woman in water" style="width:200px;height:300px">
     </a>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="trail 5.jpg" class="thumbnail">
       <p>trail 5</p> 
-      <img src="trail 5.jpg" alt="trail 5" style="width:200px;height:300px">
+      <img id="tall2"src="trail 5.jpg" alt="trail 5" style="width:200px;height:300px">
     </a>
   </div>
 </div>
-
+</div>
+<script src="mylightbox.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

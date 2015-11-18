@@ -2,3 +2,35 @@ body  {background-color: #660033;
 text-align: center;
 color: #ffcc66;
 }
+.well {background-color: #4d0027;
+	margin-top: 100px;
+	border-color: #ffcc66;
+}
+.row{padding-bottom: 10px}
+@media all and (max-width: 768px) {
+    .well {
+         margin-top: 200px;
+    }
+	
+}
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+ margin-top: 10%; 
+ width:auto;
+  height:auto;  
+}
+
+ #imageGallery  p{color: #4d0027}
+ #imageGallery  a{ background: linear-gradient(to bottom , #aaaa55 , #4d0027); border-color: #ffcc66 }
+.carousel-inner h3{color: #aaaa55}
+.carousel-inner p{color: #aaaa55}
